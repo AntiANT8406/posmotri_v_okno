@@ -81,6 +81,7 @@ ol {
   border: 1px solid #fff;
   background-color: transparent;
   box-shadow: none;
+  cursor: pointer;
 }
 
 .button:focus {
@@ -211,7 +212,6 @@ ol {
 .search-form__submit-button {
   align-self: flex-end;
   min-width: 194px;
-  cursor: pointer;
 }
 
 
