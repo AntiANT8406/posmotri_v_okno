@@ -241,20 +241,15 @@ ol {
 .content__list {
   position: relative;
   display: flex;
-  overflow-y: hidden;
+  overflow-y: auto;
   flex-direction: column;
   height: 295px;
-  padding-inline-end: 5px;
 }
 
 .content__list-item:not(:last-child) {
   margin-block-end: 35px;
 }
 
-.content__list:hover {
-  overflow-y: auto;
-  padding-inline-end: 0;
-}
 
 .content__card-link {
   text-decoration: none;
