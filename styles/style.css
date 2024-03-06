@@ -71,17 +71,17 @@ ol {
 
 
 .button {
-  margin: 2px;
   font-family: inherit;
   font-size: inherit;
   font-weight: 700;
   min-height: 34px;
+  margin: 2px;
+  cursor: pointer;
   text-align: center;
   color: #fff;
   border: 1px solid #fff;
   background-color: transparent;
   box-shadow: none;
-  cursor: pointer;
 }
 
 .button:focus {
@@ -184,17 +184,23 @@ ol {
 }
 
 .search-form__pseudo-checkbox {
-  display: block;
+  display: flex;
   width: 19px;
   height: 19px;
   border: 1px solid #fff;
 }
 
-.search-form__checkbox:checked + .search-form__pseudo-checkbox {
-  outline: 1px solid #000;
-  outline-offset: -2px;
-  background-color: white;
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
+  display: block;
+  align-self: center;
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  margin: 1px;
+  content: '';
+  background-color: #fff;
+  justify-self: center;
 }
+
 
 .search-form__label:has(.search-form__checkbox:focus-visible) {
   outline: 1px solid #fff;
