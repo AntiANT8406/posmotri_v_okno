@@ -229,7 +229,6 @@ ol {
   line-height: 94%;
   align-self: flex-start;
   width: 260px;
-  height: 210px;
   text-transform: uppercase;
   justify-self: flex-start;
 }
@@ -306,6 +305,7 @@ ol {
 
 .content__video-card-thumbnail {
   object-fit: cover;
+  object-position: center;
 }
 
 .more-button {
